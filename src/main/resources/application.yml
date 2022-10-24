@@ -1,0 +1,8 @@
+server:
+  port: 8889
+spring:
+    datasource: 
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://root@localhost:3306/example?serverTimezone=Asia/Taipei&useSSL=false&allowPublicKeyRetrieval=true
+        name: root
+        password: root

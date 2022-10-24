@@ -12,14 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 
 import per.mike.example.bean.ProductData;
-import per.mike.example.dao.ProductDataDao;
+import per.mike.example.dao.ProductDataMapper;
 
 @RestController
 @RequestMapping("/product")
 public class ProductController {
 
     @Autowired
-    private ProductDataDao dao;
+    private ProductDataMapper dao;
 
     @GetMapping("/fetch")
     public List<ProductData> fetch() {

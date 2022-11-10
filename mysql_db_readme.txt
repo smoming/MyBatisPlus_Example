@@ -1,4 +1,5 @@
 # mysql docker script
+docker run -p 3306:3306 --name mysql5.7.40 -e MYSQL_ROOT_PASSWORD=root -e TZ=Asia/Taipei -d mysql --default-authentication-plugin=mysql_native_password
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e TZ=Asia/Taipei -d mysql --default-authentication-plugin=mysql_native_password
 
 # mysql database create script
